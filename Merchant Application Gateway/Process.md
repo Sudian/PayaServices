@@ -19,9 +19,9 @@ We use Extensible Markup Language (XML), to send data packet requests and receiv
      	- [Other Certification Methods](Process.md#other-certification-methods)
      - [Production](Process.md#production-methods)
      	- [ACH Production Methods](Process.md#ach-certification-methods)
-     	- [Check21 Producation Methods](Process.md#check21-production-methods)
+     	- [Check21 Production Methods](Process.md#check21-production-methods)
      	- [Gift Production Methods](Process.md#gift-production-methods)
-     	- [Other Producations Methods](Process.md#other-productions-methods)
+     	- [Other Productions Methods](Process.md#other-productions-methods)
 5. [Data Packet - XML Specification](Process.md#data-packet--xml-specification)
      - [Merchant Application XML Example](Process.md#merchant-application-xml-example)
      - [XML Samples](Process.md#xml-samples)
@@ -60,7 +60,7 @@ The following SEC Codes are supported for an electronic application:
  - Gift Card
 
 # **Submissions**
-The Application Gateway has been designed for fast and easy integration with your existing system.  Simply create an xml data packet that conforms to the NewMerchApp xsd for the appropriate SEC Code and pass it to the Application Gateway for processing. To accomplish this the Application Gateway provides 2 web methods; one for certification and one for production.  In addition, each web method contains a custom SOAP header used for authentication.
+The Application Gateway has been designed for fast and easy integration with your existing system.  Simply create an xml data packet that conforms to the NewMerchApp.xsd for the appropriate SEC Code and pass it to the Application Gateway for processing. To accomplish this the Application Gateway provides 2 web methods: one for certification and one for production.  In addition, each web method contains a custom SOAP header used for authentication.
 
 ### **SOAP Header**
 
@@ -92,7 +92,7 @@ _NOTE: Board Location and Board Terminal will use the Data from Board Merchant._
 
 ## **Certification Methods**
 
-Before you are able to go into production, Paya Services requires that you cerify your solution using the follow web methods. These methods do not create live transactions with in the banking system but allow you to setup your solution for testing and ceritifying purposes.
+Before you are able to go into production, Paya Services requires that you certify your solution using the follow web methods. These methods do not create live transactions within the banking system but allow you to setup your solution for testing and certifying purposes.
 
 ### **ACH Certification Methods**
 
@@ -243,7 +243,7 @@ Before you are able to go into production, Paya Services requires that you cerif
 
 ## Production Methods
 
-Once you have **certified** with our Paya Services team you will need to used the Production Methods listed below to create live transaction within the banking system.
+Once you have **certified** with our Paya Services team you will need to use the Production Methods listed below to create live transaction within the banking system.
 
 ### **ACH Production Methods**
 
@@ -649,12 +649,12 @@ _NOTE: Terminal IDs may change based on the data created._
   - Check21 Application Sample:  [NewMerchAppSample_Check21](/Merchant%20Application%20Gateway/XML%20Samples/NewMerchAppSample_Check21.xml)
   - Gift Application Sample:  [NewMerchAppSample_Gift](/Merchant%20Application%20Gateway/XML%20Samples/NewMerchAppSample_Gift.xml)
 
-**Location Aplication Samples**:
+**Location Application Samples**:
   - ACH Location Application Sample:  [NewLocAppSample_ACH](/Merchant%20Application%20Gateway/XML%20Samples/NewLocAppSample_ACH.xml)
   - Check21 Location Application Sample:  [NewLocAppSample_Check21](/Merchant%20Application%20Gateway/XML%20Samples/NewLocAppSample_Check21.xml)
   - Gift Location Application Sample:  [NewLocAppSample_Gift](/Merchant%20Application%20Gateway/XML%20Samples/NewLocAppSample_Gift.xml)
 
-**Terminal Aplication Samples**:
+**Terminal Application Samples**:
   - ACH Terminal Application Sample: [NewTermAppSample_ACH](/Merchant%20Application%20Gateway/XML%20Samples/NewTermAppSample_ACH.xml)
   - Check21 Terminal Application Sample:  [NewTermAppSample_Check21](/Merchant%20Application%20Gateway/XML%20Samples/NewTermAppSample_Check21.xml)
   - Gift Terminal Application Sample:  [NewTermAppSample_Gift](/Merchant%20Application%20Gateway/XML%20Samples/NewTermAppSample_Gift.xml)
@@ -728,7 +728,7 @@ The example Schema file paths would be as follows:
  - New Terminal Application Schema: [NewTermApp_ACH](/Merchant%20Application%20Gateway/XSD%20to%20Use/ACH%20Schema/newtermapp_ach.xsd) 
  - New Create Terminal Application Schema: [NewTermCreateApp_ACH](/Merchant%20Application%20Gateway/XSD%20to%20Use/ACH%20Schema/newtermCreateapp_ach.xsd)
 
-<sub>For the latest ACH XSD Schemas see: [ACH XDS Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/ACH%20Schema)</sub>
+<sub>For the latest ACH XSD Schemas see: [ACH XSD Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/ACH%20Schema)</sub>
 
 ### **Check21 Schema**
 
@@ -737,7 +737,7 @@ The example Schema file paths would be as follows:
   - New Terminal Application Schema: [NewTermApp_Check21](/Merchant%20Application%20Gateway/XSD%20to%20Use/Check21%20Schema/newtermapp_Check21.xsd)  
   - New Create Terminal Application Schema: [NewTermCreateApp_Check21](/Merchant%20Application%20Gateway/XSD%20to%20Use/Check21%20Schema/newtermCreateapp_Check21.xsd)
    
-<sub>For the latest Check21 XSD Schemas see: [Check21 XDS Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Check21%20Schema)</sub>
+<sub>For the latest Check21 XSD Schemas see: [Check21 XSD Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Check21%20Schema)</sub>
  
 ### **Gift Schema**
 
@@ -746,7 +746,7 @@ The example Schema file paths would be as follows:
  - New Terminal Application Schema: [NewTermApp_Gift](/Merchant%20Application%20Gateway/XSD%20to%20Use/Gift%20Schema/newTermapp_gift.xsd)
  - New Create Terminal Application Schema: [NewTermCreateApp_Gift](/Merchant%20Application%20Gateway/XSD%20to%20Use/Gift%20Schema/newTermCreateapp_gift.xsd)
 
-<sub>For the latest Gift XSD Schemas see: [Gift XDS Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Gift%20Schema)</sub>
+<sub>For the latest Gift XSD Schemas see: [Gift XSD Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Gift%20Schema)</sub>
 
 ### **Other Schema** 
 
@@ -754,7 +754,7 @@ The example Schema file paths would be as follows:
   - Board Location Application Schema: [NewLocationsApp](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema/NewLocationsApp.xsd)
   - Create Terminal Application Schema: [NewTerminalsApp](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema/NewTerminalsApp.xsd)
 
-<sub>For the latest Other XSD Schemas see: [Check21 XDS Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema)</sub>
+<sub>For the latest Other XSD Schemas see: [Check21 XSD Schema](/Merchant%20Application%20Gateway/XSD%20to%20Use/Other%20Schema)</sub>
 
 
 ## **Response**
@@ -859,7 +859,7 @@ Test Merchant ACH 1 (ISO ID: 9999, CrossRef: 261407, Status: AppApprovedandActiv
 
 ## **Exceptions**
 
-If an error occurs within the Application Gateway the XML string response will detail the reason for the error within an Exception element. The Exception element will NOT be present if an error did not occur. 
+If an error occurs within the Application Gateway, the XML string response will detail the reason for the error within an Exception element. The Exception element will NOT be present if an error did not occur. 
 
 EXCEPTION Element – Example as a child of the RESPONSE element
 
