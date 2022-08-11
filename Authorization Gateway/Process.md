@@ -38,7 +38,7 @@ XML Schema Definitions (XSDs) are used by the Authorization Gateway to validate 
      - [Terminal Settings - XML Specification](Process.md#terminal-settings---xml-specification)
      - [Authorization Gateway XML Data Packet Example](Process.md#authorization-gateway-xml-data-packet-example)
      - [Authorization Gateway XML Data Packet with Token Example](Process.md#authorization-gateway-xml-data-packet-with-token-example)
-6. [How to determine which XML & xsd Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
+6. [How to determine which XML & XSD Template to Use](Process.md#how-to-determine-which-xml--xsd-template-to-use)
      - [Standard XML & XSD Templates](Process.md#standard-templates)  
 		- [PPD Templates](Process.md#ppd-templates)  
 		- [CCD Templates](Process.md#ccd-templates)  
@@ -529,13 +529,13 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 1017 / 2017                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/PPD%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/PPD%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest PPD XSD Schemas see: [PPD Schemas - Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) and [PPD Schemas - Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Non-Guaranteed)</sub>
 
 | **PPD**                                                    | Certification Terminal ID                |             |              |           |     |    | Production  | Production  |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|---------------------|-|-|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) | [XSD Non- Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Non-Guaranteed) |XSD Guaranteed | XSD Non- Guaranteed |
+|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Non-Guaranteed) |XSD Guaranteed | XSD Non-Guaranteed |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       | | |
 | CheckNoVerificationDLOptional                          | 1010 / 2010                              |             |              |           | [XSD ](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed/CheckNoVerificationDLOptional.xsd)         | [XSD ](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Non-Guaranteed/Ng_CheckNoVerificationDLOptional.xsd)      | [XSD ](https://demo.eftchecks.com/webservices/Schemas/ppd/CheckNoVerificationDLOptional.xsd) |  [XSD ](https://demo.eftchecks.com/webservices/Schemas/ppd/Ng_CheckNoVerificationDLOptional.xsd) |
 | CheckNoVerificationDLRequired                          | 1011 / 2011                              |      X      |              |           | [XSD ](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Guaranteed/CheckVerificationIdentityVerificationDLOptional.xsd)            | [XSD ](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/PPD%20Schemas%20-%20Non-Guaranteed/Ng_CheckNoVerificationDLRequired.xsd)                 | | |
@@ -576,13 +576,13 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 1717 / 2717                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/CCD%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/CCD%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest CCD XSD Schemas see: [CCD Schemas - Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Guaranteed) and [CCD Schemas - Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Non-Guaranteed)</sub>
 
 | **CCD**                                                    | Certification Terminal ID                |             |              |           |                |                     |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|---------------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Guaranteed) | [XSD Non- Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Non-Guaranteed) |
+|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Non-Guaranteed) |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       |
 | CheckNoVerificationDLOptional                          | 1910 / 2910                              |             |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Guaranteed/CheckNoVerificationDLOptional.xsd)            | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Non-Guaranteed/Ng_CheckNoVerificationDLOptional.xsd)                 |
 | CheckNoVerificationDLRequired                          | 1911 / 2911                              |      X      |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Guaranteed/CheckVerificationIdentityVerificationDLOptional.xsd)            | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/CCD%20Schemas%20-%20Non-Guaranteed/Ng_CheckNoVerificationDLRequired.xsd)                 |
@@ -618,7 +618,7 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 2217                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/WEB%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/WEB%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest WEB XSD Schemas see: [WEB Schemas](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/WEB%20Schemas)</sub>
 
@@ -652,13 +652,13 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 1217 / 2217                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/TEL%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/TEL%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest TEL XSD Schemas see: [TEL Schemas - Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Guaranteed) and [TEL Schemas - Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Non-Guaranteed)</sub>
 
 | **TEL**                                                    | Certification Terminal ID                |             |              |           |                |                     |
 |------------------------------------------------------------|------------------------------------------|-------------|--------------|-----------|----------------|---------------------|
-|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Guaranteed) | [XSD Non- Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Non-Guaranteed) |
+|                                                            | Guaranteed 1000's  Non-Guaranteed 2000's | DL Required | Verify Check | Verify ID |[XSD Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Guaranteed) | [XSD Non-Guaranteed](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Non-Guaranteed) |
 | **Debit Only Transactions**                                |                                          |             |              |           |             |                       |
 | CheckNoVerificationDLOptional                          | 1210 / 2210                              |             |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Guaranteed/CheckNoVerificationDLOptional.xsd)            | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Non-Guaranteed/Ng_CheckNoVerificationDLOptional.xsd)                 |
 | CheckNoVerificationDLRequired                          | 1211 / 2211                              |      X      |              |           | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Guaranteed/CheckVerificationIdentityVerificationDLOptional.xsd)            | [XSD Documentation](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/TEL%20Schemas%20-%20Non-Guaranteed/Ng_CheckNoVerificationDLRequired.xsd)                 |
@@ -685,7 +685,7 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 1117                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/POP%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/POP%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest POP XSD Schemas see: [POP Schemas](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/POP%20Schemas)</sub>
 
@@ -718,7 +718,7 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 1617                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/Check21%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/Check21%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest Check21 XSD Schemas see: [Check21 Schemas](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/Check21%20Schemas)</sub>
 
@@ -751,7 +751,7 @@ XML Templates
 | IdentityVerificationOnlyDLRequired                    | 1517                              |      X      |              |     X     | [XML](/Authorization%20Gateway/XML/Standard/BOC%20Templates/IdentityVerificationOnlyDLRequired.xml)         | [XML](/Authorization%20Gateway/XML/With%20Tokens/BOC%20Templates/IdentityVerificationOnlyDLWithTokenRequired.xml)                   |
 
 
-Corresponding xsd Template
+Corresponding XSD Template
 
 <sub>For the latest BOC XSD Schemas see: [BOC Schemas](/Authorization%20Gateway/XSD/Standard%20XSD%20Schemas/BOC%20Schemas)</sub>
 
